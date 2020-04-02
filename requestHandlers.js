@@ -11,6 +11,9 @@ function deny(res){
 	res.write("no.");
 	res.end()
 }
+function oAuthCallback(res){
+	console.log("oAuth Callback called");
+}
 
 function favicon(res){
 
@@ -18,3 +21,4 @@ function favicon(res){
 exports.incomingCall = incomingCall;
 exports.deny = deny;
 exports.favicon = favicon;
+exports.oauth = oAuthCallback;
