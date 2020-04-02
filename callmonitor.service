@@ -1,0 +1,15 @@
+[Unit]
+Description="Call Monitoring server"
+
+[Service]
+ExecStart=/usr/bin/node index.js
+WorkingDirectory=/home/connor/callmonitor/
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=CallMonitorServer
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
