@@ -9,7 +9,7 @@ I plan to abuse this to issue a state change to the lights in the room, and paus
 currently playing track in Spotify.
 
 ## Endpoints
-We expose a single endpoint to the web: http://callmonitor.connorfindlay.com/incoming-call. When a GET
+We expose a single endpoint to the web: /incoming-call. When a GET
 request is recieved, the endpoint returns a 200 OK response to the call server to make it happy,
 and then call the remote API on Hue and Spotify to pause the track and to change the lighting
 state.
