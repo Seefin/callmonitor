@@ -6,5 +6,9 @@ function deny(){
 	console.log("Forbidden");
 }
 
+function favicon(){
+
+}
 exports.incomingCall = incomingCall;
 exports.deny = deny;
+exports.favicon = favicon;

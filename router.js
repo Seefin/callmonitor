@@ -4,7 +4,7 @@ function route(handle, pathname){
 		handle[pathname]();
 	} else {
 		console.log("No handler for "+pathname+". Default used.");
-		handle[deny]();
+		handle["deny"]();
 	}
 }
 
