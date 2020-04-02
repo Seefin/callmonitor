@@ -6,6 +6,6 @@ var handle = {};
 handle["/incoming-call"] = requestHandlers.incomingCall;
 handle["/favicon.ico"] = requestHandlers.favicon;
 handle["deny"] = requestHandlers.deny;
-handle["oAuth-callback"] = requestHandlers.oauth;
+handle["/oAuth-callback"] = requestHandlers.oauth;
 
 server.start(router.route, handle);
