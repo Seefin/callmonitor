@@ -4,9 +4,6 @@
   "description": "HTTP(?S) servr that listens for requests on port 80, and triggers a state change in spotify and Hue when it gets a GET.",
   "main": "index.js",
   "private" : true,
-  "dependencies":{
-	"mz" : "^2.7.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Seefin/callmonitor.git"
