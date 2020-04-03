@@ -1,6 +1,6 @@
-var server = require("./server");
-var router = require("./router");
-var requestHandlers = require("./requestHandlers");
+var server = require("./modules/server");
+var router = require("./modules/router");
+var requestHandlers = require("./modules/requestHandlers");
 
 var handle = {};
 handle["/incoming-call"] = requestHandlers.incomingCall;
