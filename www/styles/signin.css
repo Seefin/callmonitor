@@ -1,0 +1,88 @@
+.mini-layout-body {
+    margin: 0 auto
+}
+
+#content .mini-layout-body {
+    width: 420px;
+    text-align: left;
+    padding-bottom: 48px;
+    margin: 0 auto
+}
+
+.page-header {
+	margin: 0;
+	border-width: 0;
+}
+
+#content .page-header h1 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 24px;
+    padding-top: 48px;
+    padding: 0;
+    border-width: 0;
+}
+
+#content .forgot {
+    display: block;
+    position: relative;
+    margin-top: 16px;
+    padding-top: 48px
+}
+
+#content .left {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+#content .right {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+#content .checkbox {
+    display: block;
+    min-height: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 0
+}
+
+#content .right .checkbox input[type="checkbox"] {
+    margin-top: 4px;
+    float: left;
+    margin-left: -20px;
+}
+
+#content .btn.user {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    line-height: 28px
+}
+
+#content .signin {
+    position: relative
+}
+
+.email-label,.password-label {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #747487
+}
+
+input.form-control {
+    height: 40px;
+    line-height: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-color: #babacc
+}
