@@ -1,4 +1,5 @@
-var url = require("url");
+const url = require("url");
+const serveStatic = require('modules/serve-static-page');
 
 function incomingCall(res, req){
 	console.log("Request handler for 'incoming-call' called");
@@ -6,7 +7,15 @@ function incomingCall(res, req){
 	res.write("Hello World");
 	res.end();
 }
+function serve(res,req){
+	console.log("Request Handler for 'serve' called.");
+	const parsedUrl = url.parse(req.url);
 
+	//Sanitize URL.
+	// see https://en.wikipedia.org/wiki/Directory_traversal_attack
+	const sanitizePath = path.normalize(parsedUrl.pathname).replace(/^(\.\.[\/\\])+/, '');
+	serveStatic.serve(sanitizePath, res);
+}
 function deny(res, req){
 	console.log("Forbidden");
 	res.writeHead(403,{"Content-Type":"text/plain"});
@@ -30,3 +39,4 @@ exports.incomingCall = incomingCall;
 exports.deny = deny;
 exports.favicon = favicon;
 exports.oauth = oAuthCallback;
+exports.serve = serve;
